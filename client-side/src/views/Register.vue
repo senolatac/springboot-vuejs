@@ -7,7 +7,7 @@
                     <label for="name">Full Name</label>
                     <input type="text" class="form-control"
                     name="name" v-model="user.name"
-                    v-validate="required"/>
+                    v-validate="'required'"/>
                     <div class="alert alert-danger" role="alert"
                     v-if="errors.has('name')">
                         Full name is required.
@@ -17,7 +17,7 @@
                     <label for="username">Username</label>
                     <input type="text" class="form-control"
                     name="username" v-model="user.username"
-                    v-validate="required"/>
+                    v-validate="'required'"/>
                     <div class="alert alert-danger" role="alert"
                     v-if="errors.has('username')">
                         Username is required.

@@ -28,7 +28,7 @@
                                 <td>{{item.role}}</td>
                                 <td>
                                     <button class="btn btn-info"
-                                    v-on:click="detail(item)">Detail</button>
+                                    @click="detail(item)">Detail</button>
                                 </td>
                             </tr>
                         </tbody>
