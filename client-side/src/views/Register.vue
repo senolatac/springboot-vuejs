@@ -72,6 +72,8 @@ export default {
             }
             UserService.register(this.user).then(
                 data => {
+                    //You can get warning (error: 'data' is defined but never used;), if you don't use parameters; 
+                    console.log(data);
                     this.$store.dispatch('success', 'Mision is completed.');
                     setTimeout(() => {
                         this.$router.push('/login');

@@ -88,6 +88,8 @@ export default {
   },
   watch: {
     $route(to, from) {
+      //You can get warning (error: 'from' is defined but never used), if you don't use parameters; 
+      console.log(to + " -> " + from);
       this.clearAlert();
     }
   }

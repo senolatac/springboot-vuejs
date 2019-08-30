@@ -61,9 +61,12 @@ export default {
             }
             UserService.login(this.user).then(
                 data => {
+                    //You can get warning (error: 'data' is defined but never used;), if you don't use parameters; 
+                    console.log(data);
                     this.$router.push('/profile');
                 },
                 error => {
+                    console.log(error);
                     this.$store.dispatch('error', 'Username or password is not valid.');
                     this.loading = false;
                 }
